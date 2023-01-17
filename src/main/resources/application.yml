@@ -1,0 +1,24 @@
+# Postgres SQL
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/GymManagementSystem
+    username: postgres
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+# Swagger configuration
+application:
+  title: Gym Management System
+  description: Gym Management System API
+  version: 1.0.0
+  termsOfServiceUrl: http://swagger.io/terms/
+  license: Apache 2.0
